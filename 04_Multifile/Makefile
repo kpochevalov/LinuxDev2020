@@ -1,4 +1,4 @@
-GENERATES = prog* file* README lib* errlog.txt
+GENERATES = file* README lib* errlog.txt
 TRASH = *.o *~ o.* empty_file
 CFLAGS = -fPIC
 LD_LIBRARY_PATH=`pwd`
@@ -51,4 +51,4 @@ clean:
 	rm -f $(TRASH)
 
 distclean:	clean
-	rm -rf $(GENERATES)
+	rm -rf $(GENERATES) $(PROG)
